@@ -219,7 +219,7 @@ for ``Album\Model\AlbumTable`` uses the ``ServiceManager`` to create an
 ``ServiceManager`` that an ``AlbumTableGateway`` is created by getting a
 ``Zend\Db\Adapter\Adapter`` (also from the ``ServiceManager``) and using it
 to create a ``TableGateway`` object. The ``TableGateway`` is told to use an
-``Album`` object whenever it creates a new result row. The TableGateway
+``Album`` object whenever it creates a new result row. The ``TableGateway``
 classes use the prototype pattern for creation of result sets and entities.
 This means that instead of instantiating when required, the system clones a
 previously instantiated object. See
